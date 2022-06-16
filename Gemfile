@@ -45,6 +45,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Simple Form aims to be as flexible as possible while helping you with powerful components to create your forms.
+# See https://github.com/heartcombo/simple_form
+gem "simple_form", "~> 5.1.0"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
