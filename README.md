@@ -19,7 +19,7 @@ bin/setup
 
 ### **Starting Redis server**
 
-Start you Redis server with the command below to make **Action Cable** work locally:
+Start you Redis server (you can use the [asdf-redis plugin](https://github.com/smashedtoatoms/asdf-redis) to install it) with the command below to make **Action Cable** work locally:
 
 ```
 redis-server
