@@ -1,2 +1,3 @@
 yarn 1.22.19
 nodejs 18.2.0
+redis 7.0.2

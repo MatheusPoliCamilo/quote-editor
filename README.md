@@ -17,6 +17,14 @@ With the **Ruby** installed, and the **PostgreSQL** service running, you need to
 bin/setup
 ```
 
+### **Starting Redis server**
+
+Start you Redis server with the command below to make **Action Cable** work locally:
+
+```
+redis-server
+```
+
 ### **Running migrations**
 
 You need to modify your database schema according to the project schema:
