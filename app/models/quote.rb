@@ -8,4 +8,6 @@ class Quote < ApplicationRecord
   # after_destroy_commit -> { broadcast_remove_to "quotes" }
   # Those three callbacks are equivalent to the following single line
   broadcasts_to ->(quote) { "quotes" }, inserts_by: :prepend
+
+  belongs_to :company
 end
