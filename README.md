@@ -1,4 +1,4 @@
-# **README**
+# **Hotrails: The Turbo Rails Tutorial** 💎🛤️⚡
 
 This project is a modern, single-page, reactive web applications with Ruby on Rails 7 without writing any custom JavaScript code. Built in the turbo rails tutorial: [Hotrails](https://www.hotrails.dev/).
 
