@@ -21,4 +21,28 @@
     display: flex;
     gap: var(--space-xs);
   }
+
+  &__body {
+    border-radius: var(--border-radius);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-small);
+    margin-top: var(--space-xs);
+    padding: var(--space-xxs);
+    padding-top: 0;
+
+    @include media(tabletAndUp) {
+      padding: var(--space-m);
+    }
+  }
+
+  &__footer {
+    border: dashed 2px var(--color-light);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: var(--space-xxs);
+
+    @include media(tabletAndUp) {
+      padding: var(--space-m);
+    }
+  }
 }

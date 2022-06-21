@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_21_030944) do
+ActiveRecord::Schema.define(version: 2022_06_21_224503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,17 @@ ActiveRecord::Schema.define(version: 2022_06_21_030944) do
     t.index ["date", "quote_id"], name: "index_line_item_dates_on_date_and_quote_id", unique: true
     t.index ["date"], name: "index_line_item_dates_on_date"
     t.index ["quote_id"], name: "index_line_item_dates_on_quote_id"
+  end
+
+  create_table "line_items", force: :cascade do |t|
+    t.bigint "line_item_date_id", null: false
+    t.string "name", null: false
+    t.text "description"
+    t.integer "quantity", null: false
+    t.decimal "unit_price", precision: 10, scale: 2, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["line_item_date_id"], name: "index_line_items_on_line_item_date_id"
   end
 
   create_table "quotes", force: :cascade do |t|
@@ -54,6 +65,7 @@ ActiveRecord::Schema.define(version: 2022_06_21_030944) do
   end
 
   add_foreign_key "line_item_dates", "quotes"
+  add_foreign_key "line_items", "line_item_dates"
   add_foreign_key "quotes", "companies"
   add_foreign_key "users", "companies"
 end

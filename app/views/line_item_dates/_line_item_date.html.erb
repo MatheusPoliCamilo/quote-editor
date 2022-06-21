@@ -16,5 +16,22 @@
                     class: "btn btn--light" %>
       </div>
     </div>
+
+    <div class="line-item-date__body">
+      <div class="line-item line-item--header">
+        <div class="line-item__name">Article</div>
+        <div class="line-item__quantity">Quantity</div>
+        <div class="line-item__price">Price</div>
+        <div class="line-item__actions"></div>
+      </div>
+
+      <%= render line_item_date.line_items, quote: quote, line_item_date: line_item_date %>
+
+      <div class="line-item-date__footer">
+        <%= link_to "Add item",
+                    [:new, quote, line_item_date, :line_item],
+                    class: "btn btn--primary" %>
+      </div>
+    </div>
   </div>
 <% end %>
