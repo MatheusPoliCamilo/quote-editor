@@ -8,8 +8,12 @@
 
     <%= link_to "New date",
                 new_quote_line_item_date_path(@quote),
+                data: { turbo_frame: dom_id(LineItemDate.new) },
                 class: "btn btn--primary" %>
   </div>
 
-  <%= render @line_item_dates, quote: @quote %>
+  <%= turbo_frame_tag LineItemDate.new %>
+  <%= turbo_frame_tag "line_item_dates" do %>
+    <%= render @line_item_dates, quote: @quote %>
+  <% end %>
 </main>
