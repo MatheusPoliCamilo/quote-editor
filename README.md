@@ -47,3 +47,10 @@ To run the project in the http://localhost:3000, run the command below:
 ```
 bin/dev
 ```
+
+## 🖼️ **Screenshots**
+
+![image](https://user-images.githubusercontent.com/25781749/174921826-e359bdac-c72f-4d90-9f27-a380d44d5531.png)
+
+![image](https://user-images.githubusercontent.com/25781749/174921859-1c2fe419-35ee-460d-986d-ab58c5012580.png)
+
