@@ -6,7 +6,7 @@ This project is a modern, single-page, reactive web applications with Ruby on Ra
 
 First of all, you need to install the **Ruby 3.0.X** version. You can use the [**rvm**](https://rvm.io/) or [**asdf**](https://asdf-vm.com/) for this.
 
-Since we use a **PostgreSQL database**, you also need to install the **PostgreSQL server** and start it:
+You also need to install the **PostgreSQL server** and start it:
 
 ```
 sudo service postgresql start
